@@ -13,7 +13,7 @@
             if (!$region) {
                 return response()->json([
                     'message' => 'Region not found'
-                ]);
+                ], 404);
             }
             $productsQuery->whereIn('id', $region->products->pluck('id'));
         }
