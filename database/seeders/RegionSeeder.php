@@ -16,13 +16,19 @@ class RegionSeeder extends Seeder
         Region::create(
             [
                 'name' => 'Tashkent'
-            ],
-            [
-                'name' => 'Samarqand'
-            ],
+            ]
+        );
+        Region::create(
             [
                 'name' => 'Buxoro'
             ]
+        );
+        Region::create(
+
+            [
+                'name' => 'Samarqand'
+            ],
+
         );
     }
 }
